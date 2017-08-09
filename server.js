@@ -15,6 +15,7 @@ app.set('view engine', 'mustache')
 
 app.get ('/', (request, response) => {
   console.log('Hello everyone!');
+  response.render('index')
 })
 
 app.listen(9999, ()=> {
